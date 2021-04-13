@@ -20,4 +20,6 @@ window.addEventListener("click", function (event) {
   c.arc(pos.x, pos.y, 30, 0, Math.PI*2,false);
   c.strokeStyle = 'black';
   c.stroke();
+  c.font = "15px Calibri";
+  c.fillText(`x : ${pos.x} y : ${pos.y}`, pos.x + 25, pos.y - 25);
 });
