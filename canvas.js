@@ -27,7 +27,6 @@ window.addEventListener("click", function (event) {
   c.fillText(`x : ${pos.x} y : ${pos.y}`, pos.x + 6, pos.y - 5);
 });
 
-
 function draw(c,image){
   if(!image.complete){
     console.log('error');
