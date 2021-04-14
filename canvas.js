@@ -15,7 +15,7 @@ let pos = {
 window.addEventListener("click", function (event) {
   pos.x = event.x;
   pos.y = event.y;
-  console.log(`x ${pos.x} y ${pos.y}`);
+  //console.log(`x ${pos.x} y ${pos.y}`);
   c.beginPath();
   c.arc(pos.x, pos.y, 30, 0, Math.PI*2,false);
   c.strokeStyle = 'black';
