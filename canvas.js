@@ -20,11 +20,11 @@ window.addEventListener("click", function (event) {
   pos.y = event.y;
   console.log(`x ${pos.x} y ${pos.y}`);
   c.beginPath();
-  c.arc(pos.x, pos.y, 30, 0, Math.PI*2,false);
+  c.arc(pos.x, pos.y + 25, 30, 0, Math.PI*2,false);
   c.strokeStyle = 'black';
   c.stroke();
   c.font = "15px Calibri";
-  c.fillText(`x : ${pos.x} y : ${pos.y}`, pos.x + 25, pos.y - 25);
+  c.fillText(`x : ${pos.x} y : ${pos.y}`, pos.x + 6, pos.y - 5);
 });
 
 
@@ -35,7 +35,7 @@ function draw(c,image){
       draw(c,image);
     },50);
   }
-  c.drawImage(image,20,20,1000,1200)
+  c.drawImage(image,0,-120,1200,1400)
 }
 
 draw(c,image);
